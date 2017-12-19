@@ -115,7 +115,7 @@ app.directive("uiAutocomplete", function($http, $timeout) {
 app.controller("myCtrl", function($scope, $http) {
 
 	var jsonData = function (request, response) {
-		$http.get("http://beta.cashbacksouq.com/getAutoSuggestProductList?reqKeyword=" + request.term)
+		$http.get("http://YOUR_API_URL?reqKeyword=" + request.term)
 			.then(function(data) {
 				response(data.data.response.docs);
 			}, function() {
