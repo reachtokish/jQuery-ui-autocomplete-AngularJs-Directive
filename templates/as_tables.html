@@ -1,0 +1,12 @@
+<table class="grid" border="1" cellpadding="10" cellspacing="0">
+	<thead>
+		<tr>
+			<th ng-repeat="col in cols">{{ col.title }}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="row in rows.data" ng-init="rowIndex = $index">
+			<td ng-repeat="col in cols">{{ row[col.field] }}</td>
+		</tr>
+	</tbody>
+</table>

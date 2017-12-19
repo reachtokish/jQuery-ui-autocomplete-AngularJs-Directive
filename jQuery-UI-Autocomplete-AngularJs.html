@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Angularjs Advanced Directive</title>
+	<link rel="stylesheet" type="text/css" href="./src/jquery-ui.css" />
+	<style type="text/css">
+	.ui-state-active, 
+	.ui-widget-content .ui-state-active, 
+	.ui-widget-header .ui-state-active, 
+	a.ui-button:active, 
+	.ui-button:active, 
+	.ui-button.ui-state-active:hover {
+		color: #000;
+	}
+	.ui-menu .ui-menu-item-wrapper {
+		display: block;
+	}
+	</style>
+</head>
+<body ng-controller="myCtrl">
+
+<input 
+	ui-autocomplete="myOptions"
+	type="text" 
+	name="headerSearch" 
+	id="headerSearch" />
+
+
+<!-- <input 
+	ui-autocomplete
+	type="text" 
+	name="headerSearch" 
+	source-type="api" 
+	source="http://beta.cashbacksouq.com/getAutoSuggestProductList" 
+	query-param="reqKeyword" 
+	id="headerSearch" 
+	append-to="body" /> -->
+
+<script type="text/javascript" src="./src/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./src/jquery-ui.js"></script>
+<script type="text/javascript" src="./src/angular.min.js"></script>
+<script type="text/javascript" src="./src/app.js"></script>
+
+</body>
+</html>
